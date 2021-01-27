@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.move {
+    margin-left: 20px;
+    color: white;
+}
+
+.mov {
+    margin-left: 50%;
+}
+
+.mov a:hover {
+    background-color: rgb(66, 63, 63);
+}
+
+.mov a {
+    padding: 0px;
+}
+
+.sign {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+.signa {
+    /* margin-left: 35%;
+    margin-right: 20%; */
+    /* margin-top: 1%; */
+    font-weight: bold;
+    flex-direction: column;
+    /* width: 100vw; */
+    width: 50%;
+    margin-top: -10rem;
+}
+
+.formdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-group {
+    width: 100%;
+}
+
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.errormsg {
+    color: red;
+    font-weight: 500;
+    display: none;
+}
+
+.display {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.strong {
+    color: rgb(14, 219, 14);
+    display: none;
+}
+
+.medium {
+    color: rgb(238, 238, 3);
+    display: none;
+}
+
+.weak {
+    color: red;
+    display: none;
+}

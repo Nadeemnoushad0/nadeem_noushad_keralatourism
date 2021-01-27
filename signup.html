@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/sign.css">
+
+    <!-- linking bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="./js/validate.js"></script>
+
+</head>
+
+<body background="./img/4.jpg">
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Kerala Tourism</a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./login.html">Login</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              District
+            </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/tvm.html">Thiruvananthapuram</a>
+                    <a class="dropdown-item" href="./kollam.html">Kollam</a>
+                    <a class="dropdown-item" href="./alappuzha.html">Alappuzha</a>
+                    <a class="dropdown-item" href="./kottayam.html">Kottayam</a>
+                    <a class="dropdown-item" href="./ernakulam.html">Ernakulam</a>
+                    <a class="dropdown-item" href="./thrissur.html">Thrissur</a>
+                    <a class="dropdown-item" href="./pathanamthitta.html">Pathanamthitta</a>
+                    <a class="dropdown-item" href="./palakkad.html">Palakkad</a>
+                    <a class="dropdown-item" href="./idukki.html">Idukki</a>
+                    <a class="dropdown-item" href="./wayanad.html">Wayanad</a>
+                    <a class="dropdown-item" href="./kannur.html">Kannur</a>
+                    <a class="dropdown-item" href="./kasargod.html">Kasargod</a>
+                    <a class="dropdown-item" href="./malapuram.html">Malappuram</a>
+                    <a class="dropdown-item" href="./kozhikode.html">Kozhikode</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="formdiv">
+        <!-- form -->
+        <form class="signa" novalidate>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                    <span class="errormsg" id="mailerr">Enter valid email</span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Password</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    <span class="errormsg" id="passworderr">Password must contain minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number</span>
+                    <span class="weak" id="weak">Weak</span>
+                    <span class="medium" id="medium">Medium</span>
+                    <span class="strong" id="strong">Strong</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Enter address">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputpin">Pincode</label>
+                    <input type="number" class="form-control" id="inputpin" min="100000" max="999999" placeholder="XXXXXX">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputph">Phone No.</label>
+                    <input type="number" class="form-control" id="inputph" min="100000" max="999999" placeholder="Enter phone number">
+                    <span class="errormsg" id="pherr">Enter valid phone number</span>
+                </div>
+            </div>
+            <div class="btn btn-primary" onclick="validatesign()">Submit</div>
+        </form>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
